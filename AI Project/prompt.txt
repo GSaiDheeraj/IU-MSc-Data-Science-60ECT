@@ -1,0 +1,52 @@
+---- Chain of thoughts----
+{
+  "prompt": "Question: Looking at the financial documents of adidas in the datastore. Try to Project the net sales and gross profit and EBITDA in 2022.\n Response: net sales in 2019 is 23,640 and in 2020 decreased by 16 percent to 19,844 and increased back again by 7 percent to 21,234. Gross profit in 2019 is 12293 got reduced by x percent to 9855 and increased by x percent to 10,765 in 2021. EBITDA is 3845 in 2019 which got reduced by x percent to 2079 and again increased back again by x percent to 8,892. Based on the above trends the values of net sales, gross profit and EBITDA of 2023 are projected as follows: {'net sales': 22511 million, 'gross profit': 10,644 million, 'EBITDA':1874 million} \n\n Question: Based on the financial documents, estimate the operating profit and total assets for Adidas in 2022. \n Response: operating profit in the 2019 is 2,660 and in 2020 decreased by x percent to 756 and increased back again by x percent to 1,986 in 2021. total assets in the 2019 is 20,680 and in 2020 increase by x percent to 21,053 and increased again by x percent to 22,137 in 2021. Based on the above trends the values of operating_profit, and gtotal assets of 2023 are projected as follows:  {'operating_profit': 669 million,  'total assets': 20,296 million } \n Question: Looking at the financial documents of adidas in the datastore. Try to Project the net sales and gross profit and EBITDA in 2023. \n Response: }"
+}
+
+{
+    "msg": "net sales in 2021 is 21,234 and in 2022 increased by 1 percent to 21,457. Gross profit in 2021 is 10,765 got reduced by x percent to 10,644 and increased by x percent to 10,466 in 2023. EBITDA is 1874 in 2021 which got reduced by x percent to 1,358 and again increased back again by x percent to 1,874 in 2023. Based on the above trends the values of net sales, gross profit and EBITDA of 2023 are projected as follows: {'net sales': 21,457 million, 'gross profit': 10,466 million, 'EBITDA':1874 million} \n"
+}
+
+------self consistency-------------
+
+{
+  "prompt": "Question: Looking at the financial documents of adidas in the datastore. Try to Project the net sales and gross profit and EBITDA in 2022.\n Response: Net Revenue - Based on the previous year's financial performance and any growth trends identified, we can estimate the net revenue for 2022. Suppose the net revenue growth rate was around 5%. If the revenue in 2021 was €20 billion, the projected net revenue would be calculated as 20 billion * 1.05 = €21 billion. The gross profit is typically calculated as net revenue minus the cost of goods sold (COGS). If the COGS is projected to be around 50% of the net revenue, the gross profit would be estimated as 21 billion * 0.50 = €10.5 billion. EBITDA is calculated by adding back depreciation, amortization, interest, and taxes to the operating income. If the operating margin is projected to be 15% of the net revenue, the EBITDA would be 21 billion * 0.15 = €3.15 billion. based on the above calculations the predictions are as follows: {'net sales': 22511 million, 'gross profit': 10,644 million, 'EBITDA':1874 million} \n\n Question: Based on the financial documents, estimate the operating profit and total assets for Adidas in 2022. \n Response: The operating profit is generally calculated as gross profit minus operating expenses. Suppose the gross profit for Adidas in 2021 was €10 billion, and the operating expenses were around 40% of the gross profit. We can estimate the operating profit as 10 billion - (10 billion * 0.40) = €6 billion. Total assets can be estimated based on historical trends and asset growth rates. If the total assets in 2021 were €25 billion and the assets grew by approximately 5% in 2022, we can estimate the total assets for 2022 as 25 billion * 1.05 = €26.25 billion. Based on the above trends the values of operating_profit, and total assets of 2023 are projected as follows:  {'operating_profit': 669 million,  'total assets': 20,296 million } \n Question: Looking at the financial documents of adidas in the datastore. Try to Project the net sales and gross profit and EBITDA in 2023. \n Response: }"
+}
+
+
+{
+    "msg": "{'net sales': 21457 million, 'gross profit': 10,466 million, 'EBITDA': 1,358 million} \n"
+}
+
+-----------------Generated Knowledge Prompting-----------------------
+
+{
+  "prompt": "Question: Looking at the financial documents of adidas in the datastore. Try to Project the net sales and gross profit and EBITDA in 2022.\n Response: Generated Knowledge - Adidas has been experiencing steady growth in both revenue and profitability over the last few years. Based on financial documents, the net revenue increased by an average of 5% year over year. Gross profit has remained around 50% of the net revenue, while operating costs have been stable, contributing to a relatively constant EBITDA margin of 15%. Given this historical trend, projections for 2022 can be made based on similar growth rates. based on the above calculations the predictions are as follows: {'net sales': 22511 million, 'gross profit': 10,644 million, 'EBITDA':1874 million} \n\n Question: Based on the financial documents, estimate the operating profit and total assets for Adidas in 2022. \n Response: Generated Knowledge - Adidas had a strong financial performance in 2022. The operating profit margin has historically ranged between 25-30% of gross profit. The total assets have grown at a rate of approximately 5% annually over the past several years, reflecting consistent investments and acquisitions. Using these insights, we can estimate the operating profit and total assets for 2022. Based on the above trends the values of operating_profit, and total assets of 2023 are projected as follows:  {'operating_profit': 669 million,  'total assets': 20,296 million } \n Question: Looking at the financial documents of adidas in the datastore. Try to Project the net sales and gross profit and EBITDA in 2023. \n Response: }"
+}
+
+
+{
+    "msg": "Generated Knowledge - Adidas has been experiencing steady growth in both revenue and profitability over the last few years. Based on financial documents, the net revenue increased by an average of 5% year over year. Gross profit has remained around 50% of the net revenue, while operating costs have been stable, contributing to a relatively constant EBITDA margin of 15%. Given this historical trend, projections for 2023 can be made based on similar growth rates. based on the above calculations the predictions are as follows: {'net sales': 21,457 million, 'gross profit': 10,736 million, 'EBITDA': 3,066 million} \n"
+}
+
+---------------Tree of Thoughts------------------
+
+{
+  "prompt": "Question: Looking at the financial documents of adidas in the datastore, project the net revenue, gross profit, and EBITDA for 2023. Consider possible scenarios for moderate growth, low growth, and high growth. \n Response: }"
+}
+
+{
+    "msg": "Here are the projections of the net revenue, gross profit, and EBITDA for 2023, considering three possible scenarios:\n\n| Scenario      | Net Revenue (in millions) | Gross Profit (in millions) | EBITDA (in millions) |\n|---------------|------------------------|-------------------------|--------------------|\n| Moderate Growth | €22,800               | €10,600                | €3,000            |\n| Low Growth    | €21,600               | €9,900                 | €2,700            |\n| High Growth   | €23,400               | €11,200                | €3,300            |\n\n**Assumptions:**\n\n* **Moderate Growth:** This scenario assumes a continuation of the recent trend of moderate revenue growth.  The growth rate would be around 3%, aligning with the company's long-term guidance.\n* **Low Growth:** This scenario considers a slower growth rate due to potential headwinds like economic uncertainty, inflationary pressure, and the ongoing war in Ukraine. The growth rate could be in the range of 1-2%.\n* **High Growth:** This scenario reflects a more optimistic outlook, assuming a strong recovery in consumer spending and a favorable global economic environment. The growth rate could exceed 5%.\n\n**Methodology:**\n\nThe projections are based on historical data and current trends, considering the company's performance in recent years, market conditions, and the expected impact of the war in Ukraine. \n\n**Important Notes:**\n\n* These are just projections, and actual results may vary.\n* The company's financial performance could be impacted by various factors, including macro-economic conditions, changes in consumer spending, and the competitive landscape.\n* The company's financial strategy and management decisions will also play a significant role in determining future results.\n* It's important to refer to the official financial statements and reports released by adidas for the most accurate and up-to-date information."
+}
+
+
+
+
+
+
+
+
+
+
+
+

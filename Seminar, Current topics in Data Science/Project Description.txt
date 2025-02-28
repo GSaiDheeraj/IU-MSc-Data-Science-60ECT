@@ -1,0 +1,5 @@
+B2B Credit risk analysis:
+
+Proposal : End to end flow of credit risk analysis in b2b. 
+
+Proposed flow: Financial Document Scanner + OCL + pbop + borr
